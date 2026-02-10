@@ -1,0 +1,132 @@
+:root {
+  --primary-text-color: #ffffff;
+  --other-color: rgb(0,255,0);
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top:0;
+    background-color: var(--other-color);
+    color:rgb(0,0,0);
+    line-height:60px;
+    font-size:large;
+    margin:auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.container {
+  display: flex;      
+  gap: 20px;         
+}
+
+.sidebar{
+    position:sticky;
+    top:65px;
+    flex: 0 0 250px;
+    align-self: flex-start;
+    color:var(--other-color);
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li a{
+    border-radius: 5px;
+    display: block;
+    background-color: var(--other-color);
+    color:black;
+    padding: 14px 16px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+article{
+    color: var(--primary-text-color);
+    flex: 1;  
+}
+
+p{
+    margin:30px;
+    color: var(--primary-text-color);
+    justify-content: center;
+}
+
+h3{
+    color:var(--other-color);
+}
+
+ul{
+    margin:30px;
+}
+
+ol{
+    margin: 30px;
+}
+
+a {
+    color: cyan;
+}
+
+a:hover{
+    color: white
+}
+
+img{
+    border: 5px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+#submit{
+    background-color: var(--other-color);
+    color: black;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+#submit:hover{
+    
+    box-shadow: 5px 5px 5px var(--other-color);
+    
+}
+
+#submit:active{
+    background-color:blue;
+}
+
+input[type=text]{
+  width: 50%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+input[type=email]{
+  width: 50%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.link{
+    text-align: right;
+    background-color: black;
+    color: var(--other-color);
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+footer{
+    color:cyan;
+}
